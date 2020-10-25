@@ -19,8 +19,7 @@
 }
 + (JSONKeyMapper *)keyMapper {
     return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{
-        @"ID":@"id",
-        @"imageStr":@"image"
+        @"ID":@"id"
     }];
 }
 @end
@@ -31,7 +30,8 @@
 }
 + (JSONKeyMapper *)keyMapper {
     return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{
-        @"target":@"id"
+        @"ID":@"id",
+        @"imageStr":@"image"
     }];
 }
 @end

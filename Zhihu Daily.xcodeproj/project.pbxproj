@@ -10,12 +10,19 @@
 		93B754CDC95432C88DE8B846 /* libPods-Zhihu Daily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4E4C4811F08A53AF263FE4 /* libPods-Zhihu Daily.a */; };
 		FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE2C2540337000BC9B23 /* CONTENTModel.m */; };
 		FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE322542CADD00BC9B23 /* MAINView.m */; };
+		FB95F0B3254809AA00334C19 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0B2254809AA00334C19 /* fanhui.png */; };
+		FB95F0BC25480CC200334C19 /* MYTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0BB25480CC200334C19 /* MYTableViewCell1.m */; };
+		FB95F0C52548181F00334C19 /* MYTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0C42548181F00334C19 /* MYTableViewCell2.m */; };
+		FB95F0CA254818E300334C19 /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0C9254818E300334C19 /* you.png */; };
+		FB95F0D025481E2300334C19 /* MYTableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0CF25481E2300334C19 /* MYTableViewCell3.m */; };
+		FB95F0D625482CBE00334C19 /* yejianmoshi.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0D425482CBE00334C19 /* yejianmoshi.png */; };
+		FB95F0D725482CBE00334C19 /* ziyuan.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0D525482CBE00334C19 /* ziyuan.png */; };
 		FBBA0DB2254406110022F77A /* MAINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA0DB1254406110022F77A /* MAINViewController.m */; };
 		FBBA0DB72545574F0022F77A /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBA0DB62545574E0022F77A /* touxiang.jpg */; };
 		FBBA0DBC254564110022F77A /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBA0DBB254564110022F77A /* touxiang.png */; };
 		FBBA0DC2254564750022F77A /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA0DC1254564750022F77A /* MYViewController.m */; };
 		FBBA0DC8254566100022F77A /* CONTENTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA0DC7254566100022F77A /* CONTENTTableViewCell.m */; };
-		FBBA0DCE254597FB0022F77A /* MAINScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA0DCD254597FB0022F77A /* MAINScrollView.m */; };
+		FBBA0E072547ED1E0022F77A /* CarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA0E062547ED1E0022F77A /* CarouselView.m */; };
 		FBF12D20253ECECF005238F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12D1F253ECECF005238F8 /* AppDelegate.m */; };
 		FBF12D23253ECECF005238F8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12D22253ECECF005238F8 /* SceneDelegate.m */; };
 		FBF12D26253ECECF005238F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF12D25253ECECF005238F8 /* ViewController.m */; };
@@ -55,6 +62,16 @@
 		FB93AE2C2540337000BC9B23 /* CONTENTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTModel.m; sourceTree = "<group>"; };
 		FB93AE312542CADD00BC9B23 /* MAINView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINView.h; sourceTree = "<group>"; };
 		FB93AE322542CADD00BC9B23 /* MAINView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAINView.m; sourceTree = "<group>"; };
+		FB95F0B2254809AA00334C19 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fanhui.png; path = ../../fanhui.png; sourceTree = "<group>"; };
+		FB95F0BA25480CC200334C19 /* MYTableViewCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell1.h; sourceTree = "<group>"; };
+		FB95F0BB25480CC200334C19 /* MYTableViewCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell1.m; sourceTree = "<group>"; };
+		FB95F0C32548181F00334C19 /* MYTableViewCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell2.h; sourceTree = "<group>"; };
+		FB95F0C42548181F00334C19 /* MYTableViewCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell2.m; sourceTree = "<group>"; };
+		FB95F0C9254818E300334C19 /* you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you.png; sourceTree = "<group>"; };
+		FB95F0CE25481E2300334C19 /* MYTableViewCell3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell3.h; sourceTree = "<group>"; };
+		FB95F0CF25481E2300334C19 /* MYTableViewCell3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell3.m; sourceTree = "<group>"; };
+		FB95F0D425482CBE00334C19 /* yejianmoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yejianmoshi.png; sourceTree = "<group>"; };
+		FB95F0D525482CBE00334C19 /* ziyuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ziyuan.png; sourceTree = "<group>"; };
 		FBBA0DB0254406110022F77A /* MAINViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINViewController.h; sourceTree = "<group>"; };
 		FBBA0DB1254406110022F77A /* MAINViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAINViewController.m; sourceTree = "<group>"; };
 		FBBA0DB62545574E0022F77A /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
@@ -63,8 +80,8 @@
 		FBBA0DC1254564750022F77A /* MYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
 		FBBA0DC6254566100022F77A /* CONTENTTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONTENTTableViewCell.h; sourceTree = "<group>"; };
 		FBBA0DC7254566100022F77A /* CONTENTTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTTableViewCell.m; sourceTree = "<group>"; };
-		FBBA0DCC254597FB0022F77A /* MAINScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINScrollView.h; sourceTree = "<group>"; };
-		FBBA0DCD254597FB0022F77A /* MAINScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAINScrollView.m; sourceTree = "<group>"; };
+		FBBA0E052547ED1E0022F77A /* CarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselView.h; sourceTree = "<group>"; };
+		FBBA0E062547ED1E0022F77A /* CarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselView.m; sourceTree = "<group>"; };
 		FBF12D1B253ECECF005238F8 /* Zhihu Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zhihu Daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF12D1E253ECECF005238F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF12D1F253ECECF005238F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,11 +151,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB95F0A52547FEF500334C19 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				FBBA0E052547ED1E0022F77A /* CarouselView.h */,
+				FBBA0E062547ED1E0022F77A /* CarouselView.m */,
+				FB93AE312542CADD00BC9B23 /* MAINView.h */,
+				FB93AE322542CADD00BC9B23 /* MAINView.m */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		FB95F0A62547FF0800334C19 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				FBBA0DB0254406110022F77A /* MAINViewController.h */,
+				FBBA0DB1254406110022F77A /* MAINViewController.m */,
+				FBBA0DC0254564750022F77A /* MYViewController.h */,
+				FBBA0DC1254564750022F77A /* MYViewController.m */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		FBBA0DD22546E97C0022F77A /* m */ = {
+			isa = PBXGroup;
+			children = (
+				FBF12D6D253EF8A6005238F8 /* NEWSModel.h */,
+				FBF12D6E253EF8A6005238F8 /* NEWSModel.m */,
+				FBF12D73253F1A79005238F8 /* BEFOREModel.h */,
+				FBF12D74253F1A79005238F8 /* BEFOREModel.m */,
+				FB93AE2B2540337000BC9B23 /* CONTENTModel.h */,
+				FB93AE2C2540337000BC9B23 /* CONTENTModel.m */,
+				FBF12D5E253EECFE005238F8 /* ZhihuManager.h */,
+				FBF12D5F253EECFE005238F8 /* ZhihuManager.m */,
+				FBBA0DC6254566100022F77A /* CONTENTTableViewCell.h */,
+				FBBA0DC7254566100022F77A /* CONTENTTableViewCell.m */,
+				FB95F0BA25480CC200334C19 /* MYTableViewCell1.h */,
+				FB95F0BB25480CC200334C19 /* MYTableViewCell1.m */,
+				FB95F0C32548181F00334C19 /* MYTableViewCell2.h */,
+				FB95F0C42548181F00334C19 /* MYTableViewCell2.m */,
+				FB95F0CE25481E2300334C19 /* MYTableViewCell3.h */,
+				FB95F0CF25481E2300334C19 /* MYTableViewCell3.m */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
 		FBF12D12253ECECE005238F8 = {
 			isa = PBXGroup;
 			children = (
 				FBBA0DB62545574E0022F77A /* touxiang.jpg */,
 				FBBA0DBB254564110022F77A /* touxiang.png */,
+				FB95F0B2254809AA00334C19 /* fanhui.png */,
+				FB95F0C9254818E300334C19 /* you.png */,
+				FB95F0D425482CBE00334C19 /* yejianmoshi.png */,
+				FB95F0D525482CBE00334C19 /* ziyuan.png */,
 				FBF12D1D253ECECF005238F8 /* Zhihu Daily */,
 				FBF12D39253ECED1005238F8 /* Zhihu DailyTests */,
 				FBF12D44253ECED1005238F8 /* Zhihu DailyUITests */,
@@ -172,24 +238,9 @@
 				FBF12D2C253ECED0005238F8 /* LaunchScreen.storyboard */,
 				FBF12D2F253ECED0005238F8 /* Info.plist */,
 				FBF12D30253ECED0005238F8 /* main.m */,
-				FBF12D6D253EF8A6005238F8 /* NEWSModel.h */,
-				FBF12D6E253EF8A6005238F8 /* NEWSModel.m */,
-				FBF12D73253F1A79005238F8 /* BEFOREModel.h */,
-				FBF12D74253F1A79005238F8 /* BEFOREModel.m */,
-				FB93AE2B2540337000BC9B23 /* CONTENTModel.h */,
-				FB93AE2C2540337000BC9B23 /* CONTENTModel.m */,
-				FBF12D5E253EECFE005238F8 /* ZhihuManager.h */,
-				FBF12D5F253EECFE005238F8 /* ZhihuManager.m */,
-				FBBA0DC6254566100022F77A /* CONTENTTableViewCell.h */,
-				FBBA0DC7254566100022F77A /* CONTENTTableViewCell.m */,
-				FBBA0DCC254597FB0022F77A /* MAINScrollView.h */,
-				FBBA0DCD254597FB0022F77A /* MAINScrollView.m */,
-				FB93AE312542CADD00BC9B23 /* MAINView.h */,
-				FB93AE322542CADD00BC9B23 /* MAINView.m */,
-				FBBA0DB0254406110022F77A /* MAINViewController.h */,
-				FBBA0DB1254406110022F77A /* MAINViewController.m */,
-				FBBA0DC0254564750022F77A /* MYViewController.h */,
-				FBBA0DC1254564750022F77A /* MYViewController.m */,
+				FBBA0DD22546E97C0022F77A /* m */,
+				FB95F0A52547FEF500334C19 /* v */,
+				FB95F0A62547FF0800334C19 /* c */,
 			);
 			path = "Zhihu Daily";
 			sourceTree = "<group>";
@@ -315,7 +366,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB95F0CA254818E300334C19 /* you.png in Resources */,
 				FBF12D2E253ECED0005238F8 /* LaunchScreen.storyboard in Resources */,
+				FB95F0D625482CBE00334C19 /* yejianmoshi.png in Resources */,
+				FB95F0D725482CBE00334C19 /* ziyuan.png in Resources */,
+				FB95F0B3254809AA00334C19 /* fanhui.png in Resources */,
 				FBF12D2B253ECED0005238F8 /* Assets.xcassets in Resources */,
 				FBBA0DB72545574F0022F77A /* touxiang.jpg in Resources */,
 				FBF12D29253ECECF005238F8 /* Main.storyboard in Resources */,
@@ -375,11 +430,14 @@
 				FBBA0DC8254566100022F77A /* CONTENTTableViewCell.m in Sources */,
 				FBBA0DB2254406110022F77A /* MAINViewController.m in Sources */,
 				FBF12D31253ECED0005238F8 /* main.m in Sources */,
+				FBBA0E072547ED1E0022F77A /* CarouselView.m in Sources */,
+				FB95F0BC25480CC200334C19 /* MYTableViewCell1.m in Sources */,
 				FBF12D75253F1A79005238F8 /* BEFOREModel.m in Sources */,
+				FB95F0D025481E2300334C19 /* MYTableViewCell3.m in Sources */,
 				FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */,
 				FBF12D60253EECFE005238F8 /* ZhihuManager.m in Sources */,
-				FBBA0DCE254597FB0022F77A /* MAINScrollView.m in Sources */,
 				FBF12D23253ECECF005238F8 /* SceneDelegate.m in Sources */,
+				FB95F0C52548181F00334C19 /* MYTableViewCell2.m in Sources */,
 				FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */,
 				FBBA0DC2254564750022F77A /* MYViewController.m in Sources */,
 			);
@@ -487,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -540,9 +598,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -561,8 +620,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Zhihu-Daily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -580,8 +641,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Zhihu-Daily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

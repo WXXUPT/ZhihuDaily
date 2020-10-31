@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-//#import "ZhihuManager.h"
+#import "ZhihuManager.h"
 //#import "NEWSModel.h"
 @interface ViewController ()
 
@@ -23,5 +23,6 @@
 //        } error:^(NSError *error) {
 //            NSLog(@"请求失败");
 //        }];
+    
 }
 @end

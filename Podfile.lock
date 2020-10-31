@@ -1,16 +1,22 @@
 PODS:
   - JSONModel (1.8.0)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
 
 DEPENDENCIES:
   - JSONModel
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
     - JSONModel
+    - SDWebImage
 
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
 
-PODFILE CHECKSUM: 8be8f7a4702741b755976bbec52dd02d8a4dc772
+PODFILE CHECKSUM: f6eb1975e2014ae3196f5537aaf5160aa28f5aa1
 
 COCOAPODS: 1.9.3

@@ -12,6 +12,7 @@
 #import "MYViewController.h"
 #import "CONTENTTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "CONTENTViewController.h"
 @interface MAINViewController ()
 
 @end
@@ -34,10 +35,10 @@
     [_mainView setUI];
     [self.view addSubview:_mainView];
     
+    _mainView.MAINViewDelegate = self;
     _mainView.mainTableView.delegate = self;
     _mainView.mainTableView.dataSource = self;
-    _mainView.mainScrollView.delegate = self;
-
+    
     UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 50, 414, 70)];
     navBar.barTintColor = [UIColor whiteColor];
     UINavigationItem *navItem = [[UINavigationItem alloc] initWithTitle:@"知乎日报"];
@@ -47,6 +48,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *dateStr = [NSString stringWithFormat:@"%ld  丨  知乎日报",newsModel.date];
             self.nowDate = newsModel.date;
+            self.nowDate = 20201031;
             self.temp = newsModel.stories.count;
             [self.oneStr addObjectsFromArray:newsModel.stories];
             [self.twoStr addObjectsFromArray:newsModel.top_stories];
@@ -75,8 +77,7 @@
         } error:^(NSError *error) {
             NSLog(@"todayError");
         }];
-    } 
-    
+    }
 }
 //谁用这个方法谁是脑残
 //- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -127,11 +128,6 @@
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    if (self.days == 1) {
-//        return self.temp;
-//    } else {
-//        return [self.data count];
-//    }
     if (section == 0) {
         return self.temp;
     } else {
@@ -170,8 +166,24 @@
     }
     return 0;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CONTENTViewController *contentViewController = [[CONTENTViewController alloc] init];
+    if (indexPath.section == 0) {
+        contentViewController.ID = [self.oneStr[indexPath.row] ID];
+        contentViewController.modalPresentationStyle = 0;
+        [self presentViewController:contentViewController animated:YES completion:nil];
+    } else {
+        contentViewController.ID = [self.data[indexPath.row] ID];
+        contentViewController.modalPresentationStyle = 0;
+        [self presentViewController:contentViewController animated:YES completion:nil];
+    }
+}
 - (void)pass:(NSInteger)index {
-    
+    NSLog(@"3");
+    CONTENTViewController *contentViewController = [[CONTENTViewController alloc] init];
+    contentViewController.ID = [self.twoStr[index] ID];
+    contentViewController.modalPresentationStyle = 0;
+    [self presentViewController:contentViewController animated:YES completion:nil];
 }
 
 @end

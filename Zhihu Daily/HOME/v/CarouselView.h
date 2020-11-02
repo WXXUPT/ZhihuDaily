@@ -10,7 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 @class CarouselView;
 @protocol CarouselViewDelegate <NSObject>
-@optional
 - (void)carouselView:(CarouselView *)carouselView indexOfClickedImageBtn:(NSUInteger)index;
 @end
 
@@ -22,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *currentPageColor;
 @property (nonatomic, strong) UIColor *pageColor;
 @property (nonatomic, assign, getter=isScrollDorectionPortrait) BOOL scrollDorectionPortrait;
-@property (weak, nonatomic) id<CarouselViewDelegate> delegate;
+@property id<CarouselViewDelegate> CarouselViewDelegate;
 @end
 
 NS_ASSUME_NONNULL_END

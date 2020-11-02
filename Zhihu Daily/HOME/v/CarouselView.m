@@ -6,24 +6,26 @@
 //
 
 #import "CarouselView.h"
-static const int imageBtnCount = 3;
+#import "CONTENTViewController.h"
 @implementation CarouselView
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         UIScrollView *scrollView = [[UIScrollView alloc] init];
+        
         scrollView.delegate = self;
         scrollView.showsVerticalScrollIndicator = NO;
         scrollView.showsHorizontalScrollIndicator = NO;
         scrollView.pagingEnabled = YES;
         scrollView.bounces = YES;
+        
         [self addSubview:scrollView];
         self.scrollView = scrollView;
         
-        for (int i = 0;i < imageBtnCount; i++) {
+        for (int i = 0; i < 3; i++) {
             UIButton *imageBtn = [[UIButton alloc] init];
             [scrollView addSubview:imageBtn];
-            
         }
+        
         UIPageControl *pageControl = [[UIPageControl alloc] init];
         [self addSubview:pageControl];
         self.pageControl = pageControl;
@@ -36,12 +38,14 @@ static const int imageBtnCount = 3;
     
     CGFloat width = self.bounds.size.width;
     CGFloat height = self.bounds.size.height;
+    
     if (self.isScrollDorectionPortrait) {
-        self.scrollView.contentSize = CGSizeMake(width, height * imageBtnCount);
+        self.scrollView.contentSize = CGSizeMake(width, height * 3);
     } else {
-        self.scrollView.contentSize = CGSizeMake(width * imageBtnCount, height);
+        self.scrollView.contentSize = CGSizeMake(width * 3, height);
     }
-    for (int i = 0; i < imageBtnCount; i++) {
+    
+    for (int i = 0; i < 3; i++) {
         UIButton *imageBtn = self.scrollView.subviews[i];
         [imageBtn addTarget:self action:@selector(imageBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         if (self.isScrollDorectionPortrait) {
@@ -95,16 +99,6 @@ static const int imageBtnCount = 3;
         [imageBtn setBackgroundImage:self.images[index] forState:UIControlStateHighlighted];
     }
 }
-- (void)updateContent {
-    CGFloat width = self.bounds.size.width;
-    CGFloat height = self.bounds.size.height;
-    [self setContent];
-    if (self.isScrollDorectionPortrait) {
-        self.scrollView.contentOffset = CGPointMake(0, height);
-    } else {
-        self.scrollView.contentOffset = CGPointMake(width, 0);
-    }
-}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSInteger page = 0;
     CGFloat minDistance = MAXFLOAT;
@@ -124,27 +118,38 @@ static const int imageBtnCount = 3;
     self.pageControl.currentPage = page;
 }
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [self stopTimer];
+    [self.timer invalidate];
+    self.timer = nil;
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [self startTimer];
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    [self updateContent];
+    CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
+    [self setContent];
+    if (self.isScrollDorectionPortrait) {
+        self.scrollView.contentOffset = CGPointMake(0, height);
+    } else {
+        self.scrollView.contentOffset = CGPointMake(width, 0);
+    }
 }
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
-    [self updateContent];
+    CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
+    [self setContent];
+    if (self.isScrollDorectionPortrait) {
+        self.scrollView.contentOffset = CGPointMake(0, height);
+    } else {
+        self.scrollView.contentOffset = CGPointMake(width, 0);
+    }
 }
 - (void)startTimer {
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     self.timer = timer;
-}
-- (void)stopTimer {
-    [self.timer invalidate];
-    self.timer = nil;
 }
 - (void)nextImage {
     CGFloat height = self.bounds.size.height;
@@ -156,10 +161,7 @@ static const int imageBtnCount = 3;
     }
 }
 - (void)imageBtnClick:(UIButton *)btn {
-    if ([self.delegate respondsToSelector:@selector(carouselView:indexOfClickedImageBtn:)])
-    {
-        [self.delegate carouselView:self indexOfClickedImageBtn:btn.tag];
-    }
-    
+    NSLog(@"1");
+    [self.CarouselViewDelegate carouselView:self indexOfClickedImageBtn:btn.tag];
 }
 @end

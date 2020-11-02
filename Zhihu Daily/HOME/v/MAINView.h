@@ -9,7 +9,7 @@
 #import "CONTENTTableViewCell.h"
 #import "CarouselView.h"
 NS_ASSUME_NONNULL_BEGIN
-@class  MAINView;
+
 @protocol MAINViewDelegate <NSObject>
 - (void)pass:(NSInteger)index;
 @end
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) CarouselView *mainScrollView;
 @property (nonatomic, strong) UITableView *mainTableView;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndcator;
-@property (nonatomic, weak) id<MAINViewDelegate> delegate;
+@property id<MAINViewDelegate> MAINViewDelegate;
 - (void)setUI;
 @end
 

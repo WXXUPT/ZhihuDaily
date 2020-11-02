@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MAINViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, CarouselViewDelegate, MAINViewDelegate>
+<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, MAINViewDelegate>
 @property MAINView *mainView;
 @property NSInteger days;
 @property (nonatomic, strong) NSMutableArray *data;

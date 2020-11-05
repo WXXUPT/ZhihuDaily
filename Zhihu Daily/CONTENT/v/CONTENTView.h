@@ -6,12 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CONTENTfootView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CONTENTView : UIView
-@property (nonatomic, strong) UITableView *tableView;
-- (void)setUI;
+@property (nonatomic, strong) CONTENTfootView *footView;
 @end
 
 NS_ASSUME_NONNULL_END

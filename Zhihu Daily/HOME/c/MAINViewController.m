@@ -48,7 +48,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *dateStr = [NSString stringWithFormat:@"%ld  丨  知乎日报",newsModel.date];
             self.nowDate = newsModel.date;
-            self.nowDate = 20201031;
+//            self.nowDate = 20201031;
             self.temp = newsModel.stories.count;
             [self.oneStr addObjectsFromArray:newsModel.stories];
             [self.twoStr addObjectsFromArray:newsModel.top_stories];

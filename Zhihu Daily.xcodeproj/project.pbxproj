@@ -18,8 +18,12 @@
 		FB394075254FE4500078EBAD /* shangchuan.png in Resources */ = {isa = PBXBuildFile; fileRef = FB394070254FE44F0078EBAD /* shangchuan.png */; };
 		FB394076254FE4500078EBAD /* dianzan.png in Resources */ = {isa = PBXBuildFile; fileRef = FB394071254FE44F0078EBAD /* dianzan.png */; };
 		FB394077254FE4500078EBAD /* shoucang.png in Resources */ = {isa = PBXBuildFile; fileRef = FB394072254FE44F0078EBAD /* shoucang.png */; };
-		FB394078254FE4500078EBAD /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB394073254FE44F0078EBAD /* fanhui.png */; };
 		FB394079254FE4500078EBAD /* pinglun.png in Resources */ = {isa = PBXBuildFile; fileRef = FB394074254FE4500078EBAD /* pinglun.png */; };
+		FB39408425528A060078EBAD /* CONTENTfootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39408325528A060078EBAD /* CONTENTfootView.m */; };
+		FB39409525540E420078EBAD /* COMMENTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39409425540E420078EBAD /* COMMENTSViewController.m */; };
+		FB3940A4255412240078EBAD /* LongCommentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940A3255412240078EBAD /* LongCommentsModel.m */; };
+		FB3940AA255412960078EBAD /* ShortCommentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940A9255412960078EBAD /* ShortCommentsModel.m */; };
+		FB3940B0255414690078EBAD /* COMMENTSView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940AF255414690078EBAD /* COMMENTSView.m */; };
 		FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE2C2540337000BC9B23 /* CONTENTModel.m */; };
 		FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE322542CADD00BC9B23 /* MAINView.m */; };
 		FB95F0B3254809AA00334C19 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0B2254809AA00334C19 /* fanhui.png */; };
@@ -84,8 +88,17 @@
 		FB394070254FE44F0078EBAD /* shangchuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shangchuan.png; sourceTree = "<group>"; };
 		FB394071254FE44F0078EBAD /* dianzan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dianzan.png; sourceTree = "<group>"; };
 		FB394072254FE44F0078EBAD /* shoucang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoucang.png; sourceTree = "<group>"; };
-		FB394073254FE44F0078EBAD /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
 		FB394074254FE4500078EBAD /* pinglun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinglun.png; sourceTree = "<group>"; };
+		FB39408225528A060078EBAD /* CONTENTfootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONTENTfootView.h; sourceTree = "<group>"; };
+		FB39408325528A060078EBAD /* CONTENTfootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTfootView.m; sourceTree = "<group>"; };
+		FB39409325540E420078EBAD /* COMMENTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COMMENTSViewController.h; sourceTree = "<group>"; };
+		FB39409425540E420078EBAD /* COMMENTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COMMENTSViewController.m; sourceTree = "<group>"; };
+		FB3940A2255412240078EBAD /* LongCommentsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongCommentsModel.h; sourceTree = "<group>"; };
+		FB3940A3255412240078EBAD /* LongCommentsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongCommentsModel.m; sourceTree = "<group>"; };
+		FB3940A8255412960078EBAD /* ShortCommentsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCommentsModel.h; sourceTree = "<group>"; };
+		FB3940A9255412960078EBAD /* ShortCommentsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCommentsModel.m; sourceTree = "<group>"; };
+		FB3940AE255414690078EBAD /* COMMENTSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COMMENTSView.h; sourceTree = "<group>"; };
+		FB3940AF255414690078EBAD /* COMMENTSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COMMENTSView.m; sourceTree = "<group>"; };
 		FB93AE2B2540337000BC9B23 /* CONTENTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONTENTModel.h; sourceTree = "<group>"; };
 		FB93AE2C2540337000BC9B23 /* CONTENTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTModel.m; sourceTree = "<group>"; };
 		FB93AE312542CADD00BC9B23 /* MAINView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINView.h; sourceTree = "<group>"; };
@@ -215,6 +228,10 @@
 				FB93AE2C2540337000BC9B23 /* CONTENTModel.m */,
 				FB394065254ECD510078EBAD /* EXTRAModel.h */,
 				FB394066254ECD510078EBAD /* EXTRAModel.m */,
+				FB3940A2255412240078EBAD /* LongCommentsModel.h */,
+				FB3940A3255412240078EBAD /* LongCommentsModel.m */,
+				FB3940A8255412960078EBAD /* ShortCommentsModel.h */,
+				FB3940A9255412960078EBAD /* ShortCommentsModel.m */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -224,6 +241,10 @@
 			children = (
 				FB39404A254DB5D60078EBAD /* CONTENTView.h */,
 				FB39404B254DB5D60078EBAD /* CONTENTView.m */,
+				FB39408225528A060078EBAD /* CONTENTfootView.h */,
+				FB39408325528A060078EBAD /* CONTENTfootView.m */,
+				FB3940AE255414690078EBAD /* COMMENTSView.h */,
+				FB3940AF255414690078EBAD /* COMMENTSView.m */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -233,6 +254,8 @@
 			children = (
 				FB394044254DB5BF0078EBAD /* CONTENTViewController.h */,
 				FB394045254DB5BF0078EBAD /* CONTENTViewController.m */,
+				FB39409325540E420078EBAD /* COMMENTSViewController.h */,
+				FB39409425540E420078EBAD /* COMMENTSViewController.m */,
 			);
 			path = c;
 			sourceTree = "<group>";
@@ -280,7 +303,6 @@
 				FB95F0D525482CBE00334C19 /* ziyuan.png */,
 				FB39406B254ED3550078EBAD /* icon.png */,
 				FB394071254FE44F0078EBAD /* dianzan.png */,
-				FB394073254FE44F0078EBAD /* fanhui.png */,
 				FB394074254FE4500078EBAD /* pinglun.png */,
 				FB394070254FE44F0078EBAD /* shangchuan.png */,
 				FB394072254FE44F0078EBAD /* shoucang.png */,
@@ -453,7 +475,6 @@
 				FB95F0B3254809AA00334C19 /* fanhui.png in Resources */,
 				FB394075254FE4500078EBAD /* shangchuan.png in Resources */,
 				FBF12D2B253ECED0005238F8 /* Assets.xcassets in Resources */,
-				FB394078254FE4500078EBAD /* fanhui.png in Resources */,
 				FB39406C254ED3550078EBAD /* icon.png in Resources */,
 				FB394077254FE4500078EBAD /* shoucang.png in Resources */,
 				FBBA0DB72545574F0022F77A /* touxiang.jpg in Resources */,
@@ -510,18 +531,23 @@
 			files = (
 				FB39403D254D81400078EBAD /* CONTENTManager.m in Sources */,
 				FB39402F254D45740078EBAD /* MYViewController.m in Sources */,
+				FB39409525540E420078EBAD /* COMMENTSViewController.m in Sources */,
 				FBF12D6F253EF8A6005238F8 /* NEWSModel.m in Sources */,
+				FB3940B0255414690078EBAD /* COMMENTSView.m in Sources */,
 				FBF12D26253ECECF005238F8 /* ViewController.m in Sources */,
 				FBF12D20253ECECF005238F8 /* AppDelegate.m in Sources */,
 				FBBA0DC8254566100022F77A /* CONTENTTableViewCell.m in Sources */,
 				FBF12D31253ECED0005238F8 /* main.m in Sources */,
 				FBBA0E072547ED1E0022F77A /* CarouselView.m in Sources */,
 				FB394067254ECD510078EBAD /* EXTRAModel.m in Sources */,
+				FB3940A4255412240078EBAD /* LongCommentsModel.m in Sources */,
 				FB95F0BC25480CC200334C19 /* MYTableViewCell1.m in Sources */,
 				FBF12D75253F1A79005238F8 /* BEFOREModel.m in Sources */,
 				FB394046254DB5BF0078EBAD /* CONTENTViewController.m in Sources */,
+				FB3940AA255412960078EBAD /* ShortCommentsModel.m in Sources */,
 				FB95F0D025481E2300334C19 /* MYTableViewCell3.m in Sources */,
 				FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */,
+				FB39408425528A060078EBAD /* CONTENTfootView.m in Sources */,
 				FBF12D60253EECFE005238F8 /* ZhihuManager.m in Sources */,
 				FBF12D23253ECECF005238F8 /* SceneDelegate.m in Sources */,
 				FB39404C254DB5D60078EBAD /* CONTENTView.m in Sources */,

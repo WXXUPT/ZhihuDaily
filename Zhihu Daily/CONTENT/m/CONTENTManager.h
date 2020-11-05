@@ -8,9 +8,13 @@
 #import <Foundation/Foundation.h>
 #import "CONTENTModel.h"
 #import "EXTRAModel.h"
+#import "LongCommentsModel.h"
+#import "ShortCommentsModel.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^getContent)(CONTENTModel *content);
 typedef void(^getExtra)(EXTRAModel *extraModel);
+typedef void(^getLongComments)(LongCommentsModel *longComments);
+typedef void(^getShortComments)(ShortCommentsModel *shortComments);
 typedef void(^errorBlock)(NSError *error);
 @interface CONTENTManager : NSObject<NSCopying, NSURLSessionDelegate>
 + (instancetype)sharedManager;

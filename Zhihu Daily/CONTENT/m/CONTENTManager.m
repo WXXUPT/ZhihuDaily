@@ -62,4 +62,40 @@ static CONTENTManager *manager = nil;
     }];
     [datatask resume];
 }
+- (void)netWorkForLongCommentsWithID:(NSString *)ID succeed:(getLongComments)succeedblock error:(errorBlock)errorblock {
+    NSString *string = [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/story/%@/long-comments",ID];
+    NSURL *url = [NSURL URLWithString:string];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session=[NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
+    NSURLSessionDataTask *datatask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (nil == error) {
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSError *err = nil;
+            LongCommentsModel *longComments = [[LongCommentsModel alloc] initWithDictionary:dict error:&err];
+            succeedblock(longComments);
+        } else {
+            errorblock(error);
+        }
+    }];
+    [datatask resume];
+}
+- (void)netWorkForShortCommentsWithID:(NSString *)ID succeed:(getShortComments)succeedblock error:(errorBlock)errorblock {
+    NSString *string = [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/story/%@/short-comments",ID];
+    NSURL *url = [NSURL URLWithString:string];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session=[NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
+    NSURLSessionDataTask *datatask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (nil == error) {
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSError *err = nil;
+            ShortCommentsModel *shortComments = [[ShortCommentsModel alloc] initWithDictionary:dict error:&err];
+            succeedblock(shortComments);
+        } else {
+            errorblock(error);
+        }
+    }];
+    [datatask resume];
+}
+//http://news-at.zhihu.com/api/4/story/4232852/short-comments
+//http://news-at.zhihu.com/api/4/story/4232852/long-comments
 @end

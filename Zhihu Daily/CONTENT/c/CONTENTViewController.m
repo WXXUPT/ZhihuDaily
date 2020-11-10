@@ -21,9 +21,7 @@
 
     self.data = [[NSMutableArray alloc] init];
     
-    self.contentView = [[CONTENTView alloc] initWithFrame:self.view.frame];
-    
-    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, 414, self.view.frame.size.height*0.9)];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height*0.9)];
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     NSString *str = [NSString stringWithFormat:@"https://daily.zhihu.com/story/%@", self.ID];
@@ -37,10 +35,16 @@
     
     [self.contentView.footView.commentsButton addTarget:self action:@selector(pressComments) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView.footView.backButton addTarget:self action:@selector(pressBack) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView.footView.goodButton addTarget:self action:@selector(pressGood) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void) pressGood {
+//    [self.contentView.footView.goodButton setImage:[UIImage imageNamed:@"dianzan2.png"] forState:UIControlStateHighlighted];
 }
 - (void)pressComments {
     COMMENTSViewController *viewController = [[COMMENTSViewController alloc] init];
     viewController.modalPresentationStyle = 0;
+    viewController.extraArray = [[NSMutableArray alloc] init];
+    viewController.extraArray = _data;
     viewController.ID = self.ID;
     [self presentViewController:viewController animated:YES completion:nil];
 }
@@ -50,14 +54,17 @@
 - (void)postnetWork {
     [[CONTENTManager sharedManager] netWorkForExtraWithID:self.ID succeed:^(EXTRAModel *extraModel) {
             dispatch_async(dispatch_get_main_queue(), ^{
-//                [_data addObjectsFromArray:extraModel];
+                NSLog(@"%d",extraModel.comments);
+                [self.data addObject:extraModel.comments];
+                [self.data addObject:extraModel.long_comments];
+                [self.data addObject:extraModel.popularity];
+                [self.data addObject:extraModel.short_comments];
             });
         } error:^(NSError *error) {
             NSLog(@"error");
         }];
     NSLog(@"1");
 }
-
 /*
 #pragma mark - Navigation
 

@@ -24,6 +24,9 @@
 		FB3940A4255412240078EBAD /* LongCommentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940A3255412240078EBAD /* LongCommentsModel.m */; };
 		FB3940AA255412960078EBAD /* ShortCommentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940A9255412960078EBAD /* ShortCommentsModel.m */; };
 		FB3940B0255414690078EBAD /* COMMENTSView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940AF255414690078EBAD /* COMMENTSView.m */; };
+		FB3940B625543ED60078EBAD /* CommentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940B525543ED60078EBAD /* CommentsTableViewCell.m */; };
+		FB3940BC255440980078EBAD /* COMMENTSfootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3940BB255440980078EBAD /* COMMENTSfootView.m */; };
+		FB3940CC255AA81B0078EBAD /* dianzan的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3940CB255AA81B0078EBAD /* dianzan的副本.png */; };
 		FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE2C2540337000BC9B23 /* CONTENTModel.m */; };
 		FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE322542CADD00BC9B23 /* MAINView.m */; };
 		FB95F0B3254809AA00334C19 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0B2254809AA00334C19 /* fanhui.png */; };
@@ -99,6 +102,11 @@
 		FB3940A9255412960078EBAD /* ShortCommentsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCommentsModel.m; sourceTree = "<group>"; };
 		FB3940AE255414690078EBAD /* COMMENTSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COMMENTSView.h; sourceTree = "<group>"; };
 		FB3940AF255414690078EBAD /* COMMENTSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COMMENTSView.m; sourceTree = "<group>"; };
+		FB3940B425543ED60078EBAD /* CommentsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewCell.h; sourceTree = "<group>"; };
+		FB3940B525543ED60078EBAD /* CommentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewCell.m; sourceTree = "<group>"; };
+		FB3940BA255440980078EBAD /* COMMENTSfootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COMMENTSfootView.h; sourceTree = "<group>"; };
+		FB3940BB255440980078EBAD /* COMMENTSfootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COMMENTSfootView.m; sourceTree = "<group>"; };
+		FB3940CB255AA81B0078EBAD /* dianzan的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dianzan的副本.png"; sourceTree = "<group>"; };
 		FB93AE2B2540337000BC9B23 /* CONTENTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONTENTModel.h; sourceTree = "<group>"; };
 		FB93AE2C2540337000BC9B23 /* CONTENTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTModel.m; sourceTree = "<group>"; };
 		FB93AE312542CADD00BC9B23 /* MAINView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINView.h; sourceTree = "<group>"; };
@@ -245,6 +253,10 @@
 				FB39408325528A060078EBAD /* CONTENTfootView.m */,
 				FB3940AE255414690078EBAD /* COMMENTSView.h */,
 				FB3940AF255414690078EBAD /* COMMENTSView.m */,
+				FB3940B425543ED60078EBAD /* CommentsTableViewCell.h */,
+				FB3940B525543ED60078EBAD /* CommentsTableViewCell.m */,
+				FB3940BA255440980078EBAD /* COMMENTSfootView.h */,
+				FB3940BB255440980078EBAD /* COMMENTSfootView.m */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -306,6 +318,7 @@
 				FB394074254FE4500078EBAD /* pinglun.png */,
 				FB394070254FE44F0078EBAD /* shangchuan.png */,
 				FB394072254FE44F0078EBAD /* shoucang.png */,
+				FB3940CB255AA81B0078EBAD /* dianzan的副本.png */,
 				FBF12D1D253ECECF005238F8 /* Zhihu Daily */,
 				FBF12D39253ECED1005238F8 /* Zhihu DailyTests */,
 				FBF12D44253ECED1005238F8 /* Zhihu DailyUITests */,
@@ -476,6 +489,7 @@
 				FB394075254FE4500078EBAD /* shangchuan.png in Resources */,
 				FBF12D2B253ECED0005238F8 /* Assets.xcassets in Resources */,
 				FB39406C254ED3550078EBAD /* icon.png in Resources */,
+				FB3940CC255AA81B0078EBAD /* dianzan的副本.png in Resources */,
 				FB394077254FE4500078EBAD /* shoucang.png in Resources */,
 				FBBA0DB72545574F0022F77A /* touxiang.jpg in Resources */,
 				FBF12D29253ECECF005238F8 /* Main.storyboard in Resources */,
@@ -531,6 +545,7 @@
 			files = (
 				FB39403D254D81400078EBAD /* CONTENTManager.m in Sources */,
 				FB39402F254D45740078EBAD /* MYViewController.m in Sources */,
+				FB3940BC255440980078EBAD /* COMMENTSfootView.m in Sources */,
 				FB39409525540E420078EBAD /* COMMENTSViewController.m in Sources */,
 				FBF12D6F253EF8A6005238F8 /* NEWSModel.m in Sources */,
 				FB3940B0255414690078EBAD /* COMMENTSView.m in Sources */,
@@ -552,6 +567,7 @@
 				FBF12D23253ECECF005238F8 /* SceneDelegate.m in Sources */,
 				FB39404C254DB5D60078EBAD /* CONTENTView.m in Sources */,
 				FB95F0C52548181F00334C19 /* MYTableViewCell2.m in Sources */,
+				FB3940B625543ED60078EBAD /* CommentsTableViewCell.m in Sources */,
 				FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */,
 				FB39402E254D45740078EBAD /* MAINViewController.m in Sources */,
 			);

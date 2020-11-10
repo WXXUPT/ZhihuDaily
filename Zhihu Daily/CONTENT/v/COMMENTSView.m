@@ -9,12 +9,15 @@
 
 @implementation COMMENTSView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height*0.9)];
+        self.tableView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:_tableView];
+        self.footView = [[COMMENTSfootView alloc] initWithFrame:CGRectMake(0, self.frame.size.height*0.9, self.frame.size.width, self.frame.size.height*0.1)];
+        [self addSubview:_footView];
+    }
+    return self;
 }
-*/
-
 @end

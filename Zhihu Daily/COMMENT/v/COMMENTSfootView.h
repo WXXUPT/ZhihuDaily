@@ -10,8 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface COMMENTSfootView : UIView
-@property (nonatomic, strong) UIImageView *headImageView;
+//@property (nonatomic, strong) UIImageView *headImageView;
 @property (nonatomic, strong) UILabel *sayLabel;
+@property (nonatomic, strong) UIButton *backButton;
 @end
 
 NS_ASSUME_NONNULL_END

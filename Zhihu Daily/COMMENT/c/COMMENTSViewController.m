@@ -23,10 +23,15 @@
     self.extraModel = [[EXTRAModel alloc] init];
     self.view.backgroundColor = [UIColor whiteColor];
     self.commentsView = [[COMMENTSView alloc] initWithFrame:self.view.frame];
+    [self.commentsView.footView.backButton addTarget:self action:@selector(pressBack) forControlEvents:UIControlStateNormal];
     [self.view addSubview:self.commentsView];
     
     [self postData];
 }
+- (void)pressBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)postData {
     [[CONTENTManager sharedManager] netWorkForLongCommentsWithID:self.ID succeed:^(LongCommentsModel *longComments) {
         self.commentsView.longComment = [[NSMutableArray alloc] init];

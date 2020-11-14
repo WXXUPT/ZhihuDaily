@@ -29,7 +29,7 @@
 }
 @end
 
-@implementation CommentModel
+@implementation LongCommentsModel
 + (BOOL)propertyIsOptional:(NSString *)propertyName {
     return YES;
 }

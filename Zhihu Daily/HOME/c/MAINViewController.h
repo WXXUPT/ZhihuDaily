@@ -9,6 +9,7 @@
 #import "MAINView.h"
 #import "NEWSModel.h"
 #import "BEFOREModel.h"
+#import "CONTENTViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MAINViewController : UIViewController
@@ -25,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSMutableArray *twoStr;
 @property bool isReady;
 @property bool isReady2;
+@property (nonatomic, strong) CONTENTViewController *contentViewController;
 @end
 
 NS_ASSUME_NONNULL_END

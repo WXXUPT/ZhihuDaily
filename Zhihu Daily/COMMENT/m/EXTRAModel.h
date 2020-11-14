@@ -10,10 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EXTRAModel : JSONModel
-@property (nonatomic, strong) NSNumber *long_comments;
-@property (nonatomic, strong) NSNumber *popularity;
-@property (nonatomic, strong) NSNumber *short_comments;
-@property (nonatomic, strong) NSNumber *comments;
+@property (nonatomic, copy) NSString *long_comments;
+@property (nonatomic, copy) NSString *popularity;
+@property (nonatomic, copy) NSString *short_comments;
+@property (nonatomic, copy) NSString *comments;
 @end
 //"long_comments": 0,
 //"popularity": 161,

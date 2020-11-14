@@ -21,6 +21,8 @@ typedef void(^errorBlock)(NSError *error);
 + (id)allocWithZone:(struct _NSZone *)zone;
 - (void)netWorkForContentWithID:(NSString*)ID succeed:(getContent)succeedblock error:(errorBlock)errorblock;
 - (void)netWorkForExtraWithID:(NSString*)ID succeed:(getExtra)succeedblock error:(errorBlock)errorblock;
+- (void)netWorkForLongCommentsWithID:(NSString *)ID succeed:(getLongComments)succeedblock error:(errorBlock)errorblock;
+- (void)netWorkForShortCommentsWithID:(NSString *)ID succeed:(getShortComments)succeedblock error:(errorBlock)errorblock;
 @end
 
 NS_ASSUME_NONNULL_END

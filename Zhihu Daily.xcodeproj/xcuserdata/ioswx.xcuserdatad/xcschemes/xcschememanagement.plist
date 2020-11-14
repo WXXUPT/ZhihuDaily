@@ -7,7 +7,25 @@
 		<key>Zhihu Daily.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FBF12D1A253ECECF005238F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBF12D35253ECED1005238F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBF12D40253ECED1005238F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

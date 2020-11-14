@@ -167,23 +167,25 @@
     return 0;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CONTENTViewController *contentViewController = [[CONTENTViewController alloc] init];
+    _contentViewController = [[CONTENTViewController alloc] init];
     if (indexPath.section == 0) {
-        contentViewController.ID = [self.oneStr[indexPath.row] ID];
-        contentViewController.modalPresentationStyle = 0;
-        [self presentViewController:contentViewController animated:YES completion:nil];
+        _contentViewController.ID = [self.oneStr[indexPath.row] ID];
+        NSLog(@"%@",_contentViewController.ID);
+        _contentViewController.modalPresentationStyle = 0;
+        [self presentViewController:_contentViewController animated:YES completion:nil];
     } else {
-        contentViewController.ID = [self.data[indexPath.row] ID];
-        contentViewController.modalPresentationStyle = 0;
-        [self presentViewController:contentViewController animated:YES completion:nil];
+        _contentViewController.ID = [self.data[indexPath.row] ID];
+        _contentViewController.modalPresentationStyle = 0;
+        [self presentViewController:_contentViewController animated:YES completion:nil];
     }
 }
 - (void)pass:(NSInteger)index {
-    NSLog(@"3");
     CONTENTViewController *contentViewController = [[CONTENTViewController alloc] init];
     contentViewController.ID = [self.twoStr[index] ID];
     contentViewController.modalPresentationStyle = 0;
     [self presentViewController:contentViewController animated:YES completion:nil];
 }
-
+- (void)dealloc {
+    NSLog(@"111111");
+}
 @end

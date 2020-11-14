@@ -196,6 +196,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB1B9315255FD440009A7633 /* COMMENT */ = {
+			isa = PBXGroup;
+			children = (
+				FB1B9316255FD453009A7633 /* m */,
+				FB1B9317255FD46A009A7633 /* v */,
+				FB1B9318255FD49E009A7633 /* c */,
+			);
+			path = COMMENT;
+			sourceTree = "<group>";
+		};
+		FB1B9316255FD453009A7633 /* m */ = {
+			isa = PBXGroup;
+			children = (
+				FB3940A8255412960078EBAD /* ShortCommentsModel.h */,
+				FB3940A9255412960078EBAD /* ShortCommentsModel.m */,
+				FB3940A2255412240078EBAD /* LongCommentsModel.h */,
+				FB3940A3255412240078EBAD /* LongCommentsModel.m */,
+				FB394065254ECD510078EBAD /* EXTRAModel.h */,
+				FB394066254ECD510078EBAD /* EXTRAModel.m */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		FB1B9317255FD46A009A7633 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				FB3940AE255414690078EBAD /* COMMENTSView.h */,
+				FB3940AF255414690078EBAD /* COMMENTSView.m */,
+				FB3940B425543ED60078EBAD /* CommentsTableViewCell.h */,
+				FB3940B525543ED60078EBAD /* CommentsTableViewCell.m */,
+				FB3940BA255440980078EBAD /* COMMENTSfootView.h */,
+				FB3940BB255440980078EBAD /* COMMENTSfootView.m */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		FB1B9318255FD49E009A7633 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				FB39409325540E420078EBAD /* COMMENTSViewController.h */,
+				FB39409425540E420078EBAD /* COMMENTSViewController.m */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
 		FB20EF93254D44D000F6DC28 /* HOME */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,12 +279,6 @@
 				FB39403C254D81400078EBAD /* CONTENTManager.m */,
 				FB93AE2B2540337000BC9B23 /* CONTENTModel.h */,
 				FB93AE2C2540337000BC9B23 /* CONTENTModel.m */,
-				FB394065254ECD510078EBAD /* EXTRAModel.h */,
-				FB394066254ECD510078EBAD /* EXTRAModel.m */,
-				FB3940A2255412240078EBAD /* LongCommentsModel.h */,
-				FB3940A3255412240078EBAD /* LongCommentsModel.m */,
-				FB3940A8255412960078EBAD /* ShortCommentsModel.h */,
-				FB3940A9255412960078EBAD /* ShortCommentsModel.m */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -251,12 +290,6 @@
 				FB39404B254DB5D60078EBAD /* CONTENTView.m */,
 				FB39408225528A060078EBAD /* CONTENTfootView.h */,
 				FB39408325528A060078EBAD /* CONTENTfootView.m */,
-				FB3940AE255414690078EBAD /* COMMENTSView.h */,
-				FB3940AF255414690078EBAD /* COMMENTSView.m */,
-				FB3940B425543ED60078EBAD /* CommentsTableViewCell.h */,
-				FB3940B525543ED60078EBAD /* CommentsTableViewCell.m */,
-				FB3940BA255440980078EBAD /* COMMENTSfootView.h */,
-				FB3940BB255440980078EBAD /* COMMENTSfootView.m */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -266,8 +299,6 @@
 			children = (
 				FB394044254DB5BF0078EBAD /* CONTENTViewController.h */,
 				FB394045254DB5BF0078EBAD /* CONTENTViewController.m */,
-				FB39409325540E420078EBAD /* COMMENTSViewController.h */,
-				FB39409425540E420078EBAD /* COMMENTSViewController.m */,
 			);
 			path = c;
 			sourceTree = "<group>";
@@ -352,6 +383,7 @@
 				FBF12D2C253ECED0005238F8 /* LaunchScreen.storyboard */,
 				FBF12D2F253ECED0005238F8 /* Info.plist */,
 				FBF12D30253ECED0005238F8 /* main.m */,
+				FB1B9315255FD440009A7633 /* COMMENT */,
 				FB394037254D47910078EBAD /* CONTENT */,
 				FB20EF93254D44D000F6DC28 /* HOME */,
 			);
@@ -676,6 +708,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -729,6 +762,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

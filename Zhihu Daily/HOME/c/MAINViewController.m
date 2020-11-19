@@ -48,7 +48,6 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *dateStr = [NSString stringWithFormat:@"%ld  丨  知乎日报",newsModel.date];
             self.nowDate = newsModel.date;
-//            self.nowDate = 20201031;
             self.temp = newsModel.stories.count;
             [self.oneStr addObjectsFromArray:newsModel.stories];
             [self.twoStr addObjectsFromArray:newsModel.top_stories];
@@ -168,20 +167,27 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     _contentViewController = [[CONTENTViewController alloc] init];
+    _contentViewController.IDArray = [[NSMutableArray alloc] init];
+    [_contentViewController.IDArray addObjectsFromArray:self.twoStr];
+    [_contentViewController.IDArray addObjectsFromArray:self.oneStr];
+    [_contentViewController.IDArray addObjectsFromArray:self.data];
     if (indexPath.section == 0) {
-        _contentViewController.ID = [self.oneStr[indexPath.row] ID];
-        NSLog(@"%@",_contentViewController.ID);
+        _contentViewController.index = (int)indexPath.row + 5;
         _contentViewController.modalPresentationStyle = 0;
         [self presentViewController:_contentViewController animated:YES completion:nil];
     } else {
-        _contentViewController.ID = [self.data[indexPath.row] ID];
+        _contentViewController.index = (int)indexPath.row + 11;
         _contentViewController.modalPresentationStyle = 0;
         [self presentViewController:_contentViewController animated:YES completion:nil];
     }
 }
 - (void)pass:(NSInteger)index {
     CONTENTViewController *contentViewController = [[CONTENTViewController alloc] init];
-    contentViewController.ID = [self.twoStr[index] ID];
+    contentViewController.IDArray = [[NSMutableArray alloc] init];
+    [contentViewController.IDArray addObjectsFromArray:self.twoStr];
+    [contentViewController.IDArray addObjectsFromArray:self.oneStr];
+    [contentViewController.IDArray addObjectsFromArray:self.data];
+    contentViewController.index = (int)index;
     contentViewController.modalPresentationStyle = 0;
     [self presentViewController:contentViewController animated:YES completion:nil];
 }

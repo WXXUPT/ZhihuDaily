@@ -62,10 +62,10 @@
             [cell.longCommentReplyLabel setAttributedText:noteStr];
         }
         NSInteger count = [self textHeightFromTextString:cell.longCommentLabel.text width:388 fontSize:15].height / cell.longCommentLabel.font.lineHeight;
-        if (count <= 2) {
-            cell.longFoldButton.hidden = YES;
-        } else {
+        if (count > 2) {
             cell.longFoldButton.hidden = NO;
+        } else {
+            cell.longFoldButton.hidden = YES;
         }
     } else if (indexPath.row >= self.NumberOfLongComments) {
         cell.shortCommentLabel.text = _shortComment[indexPath.row - _NumberOfLongComments];
@@ -82,10 +82,10 @@
             [noteStr addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.53f green:0.53f blue:0.53f alpha:1.00f] range:range1];
             [cell.shortCommentReplyLabel setAttributedText:noteStr];
             NSInteger count = [self textHeightFromTextString:str width:388 fontSize:15].height / cell.shortCommentReplyLabel.font.lineHeight;
-            if (count <= 2) {
-                    cell.foldButton.hidden = YES;
-            } else {
+            if (count > 2) {
                     cell.foldButton.hidden = NO;
+            } else {
+                    cell.foldButton.hidden = YES;
             }
         }
 
@@ -104,7 +104,7 @@
 - (void)pressButton:(UIButton *)button {
     CommentsTableViewCell *cell = [(CommentsTableViewCell *)[button superview] superview];
     if (cell.shortCommentReplyLabel.numberOfLines == 2) {
-        cell.longCommentReplyLabel.numberOfLines = 0;
+        cell.shortCommentReplyLabel.numberOfLines = 0;
     } else {
         cell.shortCommentReplyLabel.numberOfLines = 2;
     }

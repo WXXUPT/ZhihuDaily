@@ -23,7 +23,7 @@
     self.extraModel = [[EXTRAModel alloc] init];
     self.view.backgroundColor = [UIColor whiteColor];
     self.commentsView = [[COMMENTSView alloc] initWithFrame:self.view.frame];
-    [self.commentsView.footView.backButton addTarget:self action:@selector(pressBack) forControlEvents:UIControlStateNormal];
+    [self.commentsView.footView.backButton addTarget:self action:@selector(pressBack) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.commentsView];
     
     [self postData];

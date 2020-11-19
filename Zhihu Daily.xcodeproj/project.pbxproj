@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93B754CDC95432C88DE8B846 /* libPods-Zhihu Daily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4E4C4811F08A53AF263FE4 /* libPods-Zhihu Daily.a */; };
+		FB23E9592565572900224E56 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB23E9582565572900224E56 /* fanhui.png */; };
 		FB39402E254D45740078EBAD /* MAINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39402B254D45740078EBAD /* MAINViewController.m */; };
 		FB39402F254D45740078EBAD /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39402D254D45740078EBAD /* MYViewController.m */; };
 		FB39403D254D81400078EBAD /* CONTENTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39403C254D81400078EBAD /* CONTENTManager.m */; };
@@ -29,7 +30,6 @@
 		FB3940CC255AA81B0078EBAD /* dianzan的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3940CB255AA81B0078EBAD /* dianzan的副本.png */; };
 		FB93AE2D2540337000BC9B23 /* CONTENTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE2C2540337000BC9B23 /* CONTENTModel.m */; };
 		FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93AE322542CADD00BC9B23 /* MAINView.m */; };
-		FB95F0B3254809AA00334C19 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0B2254809AA00334C19 /* fanhui.png */; };
 		FB95F0BC25480CC200334C19 /* MYTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0BB25480CC200334C19 /* MYTableViewCell1.m */; };
 		FB95F0C52548181F00334C19 /* MYTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0C42548181F00334C19 /* MYTableViewCell2.m */; };
 		FB95F0CA254818E300334C19 /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0C9254818E300334C19 /* you.png */; };
@@ -75,6 +75,7 @@
 		3F41BAB1DF8B19E5CD26D1DF /* Pods-Zhihu Daily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhihu Daily.debug.xcconfig"; path = "Target Support Files/Pods-Zhihu Daily/Pods-Zhihu Daily.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0F3769DBD77B6798192BA2 /* Pods-Zhihu Daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhihu Daily.release.xcconfig"; path = "Target Support Files/Pods-Zhihu Daily/Pods-Zhihu Daily.release.xcconfig"; sourceTree = "<group>"; };
 		CD4E4C4811F08A53AF263FE4 /* libPods-Zhihu Daily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhihu Daily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB23E9582565572900224E56 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
 		FB39402A254D45740078EBAD /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		FB39402B254D45740078EBAD /* MAINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAINViewController.m; sourceTree = "<group>"; };
 		FB39402C254D45740078EBAD /* MAINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAINViewController.h; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		FB93AE2C2540337000BC9B23 /* CONTENTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONTENTModel.m; sourceTree = "<group>"; };
 		FB93AE312542CADD00BC9B23 /* MAINView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAINView.h; sourceTree = "<group>"; };
 		FB93AE322542CADD00BC9B23 /* MAINView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAINView.m; sourceTree = "<group>"; };
-		FB95F0B2254809AA00334C19 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fanhui.png; path = ../../fanhui.png; sourceTree = "<group>"; };
 		FB95F0BA25480CC200334C19 /* MYTableViewCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell1.h; sourceTree = "<group>"; };
 		FB95F0BB25480CC200334C19 /* MYTableViewCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell1.m; sourceTree = "<group>"; };
 		FB95F0C32548181F00334C19 /* MYTableViewCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell2.h; sourceTree = "<group>"; };
@@ -340,7 +340,7 @@
 			children = (
 				FBBA0DB62545574E0022F77A /* touxiang.jpg */,
 				FBBA0DBB254564110022F77A /* touxiang.png */,
-				FB95F0B2254809AA00334C19 /* fanhui.png */,
+				FB23E9582565572900224E56 /* fanhui.png */,
 				FB95F0C9254818E300334C19 /* you.png */,
 				FB95F0D425482CBE00334C19 /* yejianmoshi.png */,
 				FB95F0D525482CBE00334C19 /* ziyuan.png */,
@@ -517,7 +517,6 @@
 				FB394076254FE4500078EBAD /* dianzan.png in Resources */,
 				FB95F0D725482CBE00334C19 /* ziyuan.png in Resources */,
 				FB394079254FE4500078EBAD /* pinglun.png in Resources */,
-				FB95F0B3254809AA00334C19 /* fanhui.png in Resources */,
 				FB394075254FE4500078EBAD /* shangchuan.png in Resources */,
 				FBF12D2B253ECED0005238F8 /* Assets.xcassets in Resources */,
 				FB39406C254ED3550078EBAD /* icon.png in Resources */,
@@ -525,6 +524,7 @@
 				FB394077254FE4500078EBAD /* shoucang.png in Resources */,
 				FBBA0DB72545574F0022F77A /* touxiang.jpg in Resources */,
 				FBF12D29253ECECF005238F8 /* Main.storyboard in Resources */,
+				FB23E9592565572900224E56 /* fanhui.png in Resources */,
 				FBBA0DBC254564110022F77A /* touxiang.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 
 #import "CollectionViewController.h"
 #import "CollectionView.h"
+#import "CollectionCellTableViewCell.h"
 @interface CollectionViewController ()
 
 @end
@@ -17,6 +18,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.collectionView = [[CollectionView alloc] initWithFrame:CGRectMake(0, 70, 414, 740)];
+    [self.collectionView setUI];
+    [self.view addSubview:self.collectionView];
+    
     UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 50, 414, 70)];
     navBar.barTintColor = [UIColor whiteColor];
     UINavigationItem *navItem = [[UINavigationItem alloc] initWithTitle:@"收藏"];

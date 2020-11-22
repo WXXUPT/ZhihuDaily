@@ -16,15 +16,16 @@
     self.contentImageView = [[UIImageView alloc] init];
     
     [self.contentView addSubview:self.contentLabel];
-    [self.contentView addSubview:self.contentView];
+    [self.contentView addSubview:self.contentImageView];
     
     return self;
 }
 - (void)layoutSubviews {
-    self.contentLabel.font = [UIFont systemFontOfSize:20];
+    self.contentLabel.font = [UIFont systemFontOfSize:17];
     self.contentLabel.textColor = [UIColor blackColor];
     self.contentLabel.frame = CGRectMake(20, 10, 240, 65);
+    self.contentLabel.numberOfLines = 2;
     
-    self.contentView.frame = CGRectMake(10, 265, 90, 90);
+    self.contentImageView.frame = CGRectMake(255, 10, 90, 90);
 }
 @end

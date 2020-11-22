@@ -9,8 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectionView : UIView 
+@interface CollectionView : UIView
+<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *ContentArray;
+@property (nonatomic, strong) NSMutableArray *ImageViewArray;
+- (void)setUI;
 @end
 
 NS_ASSUME_NONNULL_END

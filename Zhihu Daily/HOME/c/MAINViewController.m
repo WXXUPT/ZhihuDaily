@@ -31,7 +31,7 @@
     _twoStr = [[NSMutableArray alloc] init];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    _mainView = [[MAINView alloc] initWithFrame:CGRectMake(0, 0, 414, 740)];
+    _mainView = [[MAINView alloc] initWithFrame:CGRectMake(0, 50, 414, 740)];
     [_mainView setUI];
     [self.view addSubview:_mainView];
     

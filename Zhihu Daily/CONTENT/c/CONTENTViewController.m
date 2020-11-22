@@ -26,6 +26,7 @@
     [self.contentView.footView.commentsButton addTarget:self action:@selector(pressComments) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView.footView.backButton addTarget:self action:@selector(pressBack) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView.footView.goodButton addTarget:self action:@selector(pressGood) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView.footView.collectionButton addTarget:self action:@selector(pressCollect) forControlEvents:UIControlEventTouchUpInside];
 }
 - (void)setWebView {
     self.ID = [self.IDArray[self.index] ID];
@@ -39,7 +40,19 @@
     [self.contentView addSubview:webView];
 }
 - (void)pressGood {
-//    [self.contentView.footView.goodButton setImage:[UIImage imageNamed:@"dianzan2.png"] forState:UIControlStateHighlighted];
+    self.contentView.footView.goodButton.tintColor = [UIColor yellowColor];
+}
+- (void)pressCollect {
+    self.contentView.footView.collectionButton.tintColor = [UIColor yellowColor];
+}
+- (void)pressComments {
+    COMMENTSViewController *viewController = [[COMMENTSViewController alloc] init];
+    viewController.modalPresentationStyle = 0;
+    viewController.ID = self.ID;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+- (void)pressBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     CGFloat currentOffsetY = scrollView.contentOffset.y;
@@ -57,15 +70,6 @@
             [self setWebView];
         }
     }
-}
-- (void)pressComments {
-    COMMENTSViewController *viewController = [[COMMENTSViewController alloc] init];
-    viewController.modalPresentationStyle = 0;
-    viewController.ID = self.ID;
-    [self presentViewController:viewController animated:YES completion:nil];
-}
-- (void)pressBack {
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)dealloc {
     NSLog(@"222");

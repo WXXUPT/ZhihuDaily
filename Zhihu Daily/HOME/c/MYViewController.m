@@ -9,6 +9,7 @@
 #import "MYTableViewCell1.h"
 #import "MYTableViewCell2.h"
 #import "MYTableViewCell3.h"
+#import "CollectionViewController.h"
 @interface MYViewController ()
 
 @end
@@ -90,6 +91,15 @@
         return cell3;
     }
     return 0;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewController *collectionViewController = [[CollectionViewController alloc] init];
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        collectionViewController.modalPresentationStyle = 0;
+        [self presentViewController:collectionViewController animated:NO completion:nil];
+    } else {
+        
+    }
 }
 /*
 #pragma mark - Navigation

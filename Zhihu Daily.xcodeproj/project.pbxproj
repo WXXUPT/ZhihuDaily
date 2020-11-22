@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		93B754CDC95432C88DE8B846 /* libPods-Zhihu Daily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4E4C4811F08A53AF263FE4 /* libPods-Zhihu Daily.a */; };
 		FB23E9592565572900224E56 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = FB23E9582565572900224E56 /* fanhui.png */; };
+		FB23E967256A27E000224E56 /* CollectionCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23E966256A27E000224E56 /* CollectionCellTableViewCell.m */; };
+		FB23E96D256A29F700224E56 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23E96C256A29F700224E56 /* CollectionView.m */; };
+		FB23E973256A2AE500224E56 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23E972256A2AE500224E56 /* CollectionViewController.m */; };
 		FB39402E254D45740078EBAD /* MAINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39402B254D45740078EBAD /* MAINViewController.m */; };
 		FB39402F254D45740078EBAD /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39402D254D45740078EBAD /* MYViewController.m */; };
 		FB39403D254D81400078EBAD /* CONTENTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39403C254D81400078EBAD /* CONTENTManager.m */; };
@@ -76,6 +79,12 @@
 		8C0F3769DBD77B6798192BA2 /* Pods-Zhihu Daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhihu Daily.release.xcconfig"; path = "Target Support Files/Pods-Zhihu Daily/Pods-Zhihu Daily.release.xcconfig"; sourceTree = "<group>"; };
 		CD4E4C4811F08A53AF263FE4 /* libPods-Zhihu Daily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhihu Daily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB23E9582565572900224E56 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
+		FB23E965256A27E000224E56 /* CollectionCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCellTableViewCell.h; sourceTree = "<group>"; };
+		FB23E966256A27E000224E56 /* CollectionCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCellTableViewCell.m; sourceTree = "<group>"; };
+		FB23E96B256A29F700224E56 /* CollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		FB23E96C256A29F700224E56 /* CollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		FB23E971256A2AE500224E56 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		FB23E972256A2AE500224E56 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		FB39402A254D45740078EBAD /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		FB39402B254D45740078EBAD /* MAINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAINViewController.m; sourceTree = "<group>"; };
 		FB39402C254D45740078EBAD /* MAINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAINViewController.h; sourceTree = "<group>"; };
@@ -258,6 +267,8 @@
 				FB39402B254D45740078EBAD /* MAINViewController.m */,
 				FB39402A254D45740078EBAD /* MYViewController.h */,
 				FB39402D254D45740078EBAD /* MYViewController.m */,
+				FB23E971256A2AE500224E56 /* CollectionViewController.h */,
+				FB23E972256A2AE500224E56 /* CollectionViewController.m */,
 			);
 			path = c;
 			sourceTree = "<group>";
@@ -310,6 +321,8 @@
 				FBBA0E062547ED1E0022F77A /* CarouselView.m */,
 				FB93AE312542CADD00BC9B23 /* MAINView.h */,
 				FB93AE322542CADD00BC9B23 /* MAINView.m */,
+				FB23E96B256A29F700224E56 /* CollectionView.h */,
+				FB23E96C256A29F700224E56 /* CollectionView.m */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -331,6 +344,8 @@
 				FB95F0C42548181F00334C19 /* MYTableViewCell2.m */,
 				FB95F0CE25481E2300334C19 /* MYTableViewCell3.h */,
 				FB95F0CF25481E2300334C19 /* MYTableViewCell3.m */,
+				FB23E965256A27E000224E56 /* CollectionCellTableViewCell.h */,
+				FB23E966256A27E000224E56 /* CollectionCellTableViewCell.m */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -581,7 +596,9 @@
 				FB39409525540E420078EBAD /* COMMENTSViewController.m in Sources */,
 				FBF12D6F253EF8A6005238F8 /* NEWSModel.m in Sources */,
 				FB3940B0255414690078EBAD /* COMMENTSView.m in Sources */,
+				FB23E96D256A29F700224E56 /* CollectionView.m in Sources */,
 				FBF12D26253ECECF005238F8 /* ViewController.m in Sources */,
+				FB23E973256A2AE500224E56 /* CollectionViewController.m in Sources */,
 				FBF12D20253ECECF005238F8 /* AppDelegate.m in Sources */,
 				FBBA0DC8254566100022F77A /* CONTENTTableViewCell.m in Sources */,
 				FBF12D31253ECED0005238F8 /* main.m in Sources */,
@@ -602,6 +619,7 @@
 				FB3940B625543ED60078EBAD /* CommentsTableViewCell.m in Sources */,
 				FB93AE332542CADD00BC9B23 /* MAINView.m in Sources */,
 				FB39402E254D45740078EBAD /* MAINViewController.m in Sources */,
+				FB23E967256A27E000224E56 /* CollectionCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

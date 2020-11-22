@@ -1,4 +1,7 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
   - SDWebImage (5.9.0):
@@ -6,21 +9,24 @@ PODS:
   - SDWebImage/Core (5.9.0)
 
 DEPENDENCIES:
+  - FMDB
   - JSONModel
   - Masonry
   - SDWebImage
 
 SPEC REPOS:
   trunk:
+    - FMDB
     - JSONModel
     - Masonry
     - SDWebImage
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
 
-PODFILE CHECKSUM: 73afd54afd27403f6c6251c71f370ac9121f73d8
+PODFILE CHECKSUM: c1b9fb189c1114cc6096227de8eb7e92ffc7b118
 
 COCOAPODS: 1.9.3
